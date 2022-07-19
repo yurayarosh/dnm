@@ -1,0 +1,10 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixins';
+
+.layout {
+  padding-top: $header-height + px;
+
+  @include r(1199) {
+    padding-top: $header-height-sm + px;
+  }
+}

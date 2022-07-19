@@ -1,0 +1,22 @@
+@import '../../assets/styles/mixins';
+
+.form {
+  border: 1px solid #ececec;
+  background-color: #fff;
+
+  padding: 111px 30px 50px;
+
+  @include r(1199) {
+    padding: 75px 15px 30px;
+  }
+}
+
+.field {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.field-button {
+  margin-top: 40px;
+}

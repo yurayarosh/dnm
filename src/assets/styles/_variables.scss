@@ -1,0 +1,16 @@
+$c-text: #232323;
+$accent: #ed1c24;
+$accent-secondary: #223066;
+$accent-secondary-light: #0659a6;
+$danger: red;
+
+$header-height: 120;
+$header-height-sm: 90;
+
+@mixin f-reg {
+  font-family: 'lato', sans-serif;
+}
+
+@mixin f-title {
+  font-family: 'Orelega One', serif;
+}

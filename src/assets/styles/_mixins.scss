@@ -1,0 +1,22 @@
+@mixin font($alias, $name, $font-weight: 400, $font-style: normal) {
+  @font-face {
+    font-family: $alias;
+    src: url('../fonts/' + $name + '.woff2') format('woff2'),
+      url('../fonts/' + $name + '.woff') format('woff');
+    font-weight: $font-weight;
+    font-style: $font-style;
+    font-display: swap;
+  }
+}
+
+@mixin r($width) {
+  @media (max-width: $width + 'px') {
+    @content;
+  }
+}
+
+@mixin rmin($width) {
+  @media (min-width: $width + 'px') {
+    @content;
+  }
+}

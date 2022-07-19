@@ -1,0 +1,27 @@
+@import '../../assets/styles/variables';
+
+.btn {
+  @include f-title;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: $accent;
+  color: #fff;
+  text-transform: uppercase;
+
+  line-height: (20 / 18);
+
+  padding: 14px 22px;
+
+  min-width: 200px;
+
+  svg {
+    margin-left: 20px;
+  }
+
+  &:global(.accent-secondary-light) {
+    background-color: $accent-secondary-light;
+  }
+}
